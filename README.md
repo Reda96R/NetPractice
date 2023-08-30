@@ -89,3 +89,8 @@ let's say our network looks something like this: **10.1.1.55/28**
 - **IP address numb** --> 16 (14 usable), the group size;
 - **CIDR/Mask**           --> /28 / 255.255.255.240;
 If you didn't get it I highly recommend watching this [video](https://www.youtube.com/watch?v=5-wlfAdcmFQ&t=130s) as it goes through all this steps in details.
+
+## Resources:
+- https://www.practicalnetworking.net/stand-alone/subnetting-mastery/
+- https://www.calculator.net/ip-subnet-calculator.html
+- https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P
