@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br>
 <div align="center">
-  <a href="https://github.com/Reda96R/Sieve-of-Eratosthenes">
+  <a href="https://github.com/Reda96R/NetPractice">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
