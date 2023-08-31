@@ -116,7 +116,6 @@ If you didn't get it I highly recommend watching this [video](https://www.youtub
 # Acknowledgement:
 If you came up this far, well my friend congratulations that's all you need to start tackling the first levels of the project, but that doesn't mean that we've seen it all, in this short explanation I just brought to your attention some of the general concepts of subnetting and it is meant to give you a little kick start to get you going on the project, so you might need to do your own research to gain a more comprehensive understanding of subnetting and its intricacies.
 Happy subnetting = ) .
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Resources:
