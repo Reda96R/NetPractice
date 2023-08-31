@@ -18,8 +18,7 @@
    3. [OSI](#osi)
 3. [Subnetting](#subnetting)
    1. [IP Address](#ip-address)
-   2. [Subnet Mask](#subnet-mask)
-   3. [Making a Subnet](#making-a-subnet)
+   2. [Making a Subnet](#making-a-subnet)
 4. [Acknowledgement](#acknowledgement)
 5. [Resources](#resources)
 
