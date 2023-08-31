@@ -1,11 +1,33 @@
-# ::: NetPractice_42 :::
+<!-- PROJECT LOGO -->
+<br>
+<div align="center">
+  <a href="https://github.com/Reda96R/Sieve-of-Eratosthenes">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h1 align="center">::: NetPractice_42 :::</h1>
+</div>
+
+# Table of Contents
+1. [Project Overview](#project-overview)
+2. [Background Theory](#background-theory)
+   1. [What is TCP/IP?](#what-is-tcpip)
+   2. [TCP/IP](#tcpip)
+   3. [OSI](#osi)
+3. [Subnetting](#subnetting)
+   1. [IP Address](#ip-address)
+   2. [Subnet Mask](#subnet-mask)
+   3. [Making a Subnet](#making-a-subnet)
+4. [Acknowledgement](#acknowledgement)
+5. [Resources](#resources)
+
 `This project is a general practical exercise to let you discover networking.`
 ![[unplugged.png]](https://github.com/Reda96R/NetPractice/blob/main/images/unplugged.png)
 # Project overview:
 In this project we'll have to configure some small scale networks, so It would be wise to first understand TCP/IP addressing, and it wouldn't hurt to also have a look at OSI, but what the heck is TCP/IP or even this OSI thing? first let's back up a little and understand how networking works and how computers work.
 # Background theory:
 let's say we want to connect two computers so they can share data, the easiest way is to  plug those suckers with an ethernet cable and voila we have a newborn called **Networking**, but let's say another computer wants to join the party, now we'll need something called a switch (or a hub because data leaks are true communal experience) , now all the computer plugged to that switch form one **Network**, let's call it network0. now let's say in another universe network1 is running and one of the computers in that network wants to contact another in network0, how can that happen?, well that's where routers come in, all we have to do is to connect our two switches to the routers and by that we're connecting both networks, scale up this example and multiply these networks many time and you'll have this thing called the internet. this is a very general look of how networking works, so keep in mind that we're just touching the tip of the iceberg if you want to have a look on how devices talk across the network and networking in general I highly recommend NetworkChuck's free CCNA [course](https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P).
-## What is TCP/IP ?
+## What is TCP/IP?
 So here's a little history lesson, back in the days connecting two devices and sending data across was a thing from the future (literally), so **ARPANET** ( Advanced Research Projects Agency Network) came to the rescue, it was designed primarily as an experimental network to test the concept of packet switching, a revolutionary communication method where data is broken into packets and sent separately across a network, then reassembled at the destination, but during the 60's and early 70's. computers were expensive, bulky, and had limited processing power and memory and creating a large-scale network of such computers would have been impractical due to the resource constraints, I mean take a look at ARPANET's logical map,
 
 ![[arpanet.png]](https://github.com/Reda96R/NetPractice/blob/main/images/arpanet.png)
@@ -90,7 +112,10 @@ let's say our network looks something like this: **10.1.1.55/28**
 - **CIDR/Mask**           --> /28 / 255.255.255.240;
 If you didn't get it I highly recommend watching this [video](https://www.youtube.com/watch?v=5-wlfAdcmFQ&t=130s) as it goes through all this steps in details.
 
-## Resources:
+# Acknowledgement:
+If you came up this far, well my friend congratulations that's all you need to start tackling the first levels of the project, but that doesn't mean that we've seen it all, in this short explanation I just brought to your attention some of the general concepts of subnetting and it is meant to give you a little kick start to get you going on the project, so you might need to do your own research to gain a more comprehensive understanding of subnetting and its intricacies.
+Happy subnetting = ) .
+# Resources:
 - https://www.practicalnetworking.net/stand-alone/subnetting-mastery/
 - https://www.calculator.net/ip-subnet-calculator.html
 - https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P
