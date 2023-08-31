@@ -77,7 +77,7 @@ let's have an example to have a better understanding,
 IP address   --->   192.168.1.1
 subnet mask  --->   255.255.255.0
 ```
-here we have our IP address and subnet mask, let's convert our subnet into binary, if you dared to ask why, then you might be a bit off the mark on that one, my friend.
+here we have our IP address and subnet mask, let's convert our subnet into binary, if you dared to ask why, then my friend you might be a bit off the mark on that one.
 ```
 IP address   --->   192.168.1.1
 subnet mask  --->   11111111.11111111.11111111.00000000
