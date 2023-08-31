@@ -1,10 +1,9 @@
 <div id="top"></div>
-
 <!-- PROJECT LOGO -->
 <br>
 <div align="center">
   <a href="https://github.com/Reda96R/NetPractice">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/Reda96R/NetPractice/main/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h1 align="center">::: NetPractice_42 :::</h1>
@@ -23,7 +22,7 @@
 5. [Resources](#resources)
 
 `This project is a general practical exercise to let you discover networking.`
-![[unplugged.png]](https://github.com/Reda96R/NetPractice/blob/main/images/unplugged.png)
+![unplugged](https://github.com/Reda96R/NetPractice/blob/main/images/unplugged.png?raw=true)
 # Project overview:
 In this project we'll have to configure some small scale networks, so It would be wise to first understand TCP/IP addressing, and it wouldn't hurt to also have a look at OSI, but what the heck is TCP/IP or even this OSI thing? first let's back up a little and understand how networking works and how computers work.
 # Background theory:
@@ -31,13 +30,13 @@ let's say we want to connect two computers so they can share data, the easiest w
 ## What is TCP/IP?
 So here's a little history lesson, back in the days connecting two devices and sending data across was a thing from the future (literally), so **ARPANET** ( Advanced Research Projects Agency Network) came to the rescue, it was designed primarily as an experimental network to test the concept of packet switching, a revolutionary communication method where data is broken into packets and sent separately across a network, then reassembled at the destination, but during the 60's and early 70's. computers were expensive, bulky, and had limited processing power and memory and creating a large-scale network of such computers would have been impractical due to the resource constraints, I mean take a look at ARPANET's logical map,
 
-![[arpanet.png]](https://github.com/Reda96R/NetPractice/blob/main/images/arpanet.png)
+![arpanet](https://github.com/Reda96R/NetPractice/blob/main/images/arpanet.png?raw=true)
 
 so many universities and institutions were significant players in ARPANET's creation, now that we have our base system many companies like IBM made there own networks and that would make problem of compatibility, each company's network can't connect to other's networks, and to deal with that **models** were made, they came to define how devices and networks should connect, and those models are **TCP/IP** and **OSI**.
 ## TCP/IP:
  Transmission Control Protocol/Internet Protocol or TCP/IP, it came before the OSI model and it has five layers, wait what's a layer?! a **layer** simply refers to a distinct level of functionality and abstraction within the networking stack, still no idea what I'm talking about? okay let's make it more simple, Imagine the TCP/IP as a cake with different layers, each layer has its own flavors and functions, and we have five of those which are represented in the following illustration,
  
- ![[TCP_layes.png]](https://github.com/Reda96R/NetPractice/blob/main/images/TCP_layes.png)
+ ![TCP_layes](https://github.com/Reda96R/NetPractice/blob/main/images/TCP_layes.png?raw=true)
 ### Physical layer:
 This is the bottom of the cake, it all starts here where we can find the actual physical connection between devices, like plugging in cables and sending data in packages.
 >Sometimes the Physical layer can combine both the Physical and the Data link Layer 
@@ -77,7 +76,7 @@ let's have an example to have a better understanding,
 IP address   --->   192.168.1.1
 subnet mask  --->   255.255.255.0
 ```
-here we have our IP address and subnet mask, let's convert our subnet into binary, if you dared to ask why, then my friend you might be a bit off the mark on that one.
+here we have our IP address and subnet mask, let's convert our subnet into binary, if you dared to ask why, then you might be a bit off the mark on that one, my friend.
 ```
 IP address   --->   192.168.1.1
 subnet mask  --->   11111111.11111111.11111111.00000000
@@ -94,7 +93,7 @@ Before we can make a subnet, we need to find the 7 attributes of our subnet,
 - **CIDR/Mask**           --> converting between CIDR notation and subnet mask.
 In order to find all seven attributes we're going to utilize a cheat sheet that you can find in this [link](https://nsrc.org/workshops/2009/summer/presentations/day3/subnetting.pdf), or you can construct a simple version of it by following the steps explained  in this [video](https://www.youtube.com/watch?v=ljS07YTEJ2I&t=5s), I''ll just work with the simple version, 
 
-![[cheat_sheet.png]](https://github.com/Reda96R/NetPractice/blob/main/images/cheat_sheet.png)
+![cheat_sheet](https://github.com/Reda96R/NetPractice/blob/main/images/cheat_sheet.png?raw=true)
 
 let's say our network looks something like this: **10.1.1.55/28**
 **1** - we need to find the CIDR, in our case it is /28;
@@ -119,7 +118,7 @@ Happy subnetting = ) .
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Resources:
+- https://learningnetwork.cisco.com/s/question/0D56e0000BNp5TwCQJ/can-two-hosts-with-different-subnet-masks-be-on-the-same-subnet
 - https://www.practicalnetworking.net/stand-alone/subnetting-mastery/
 - https://www.calculator.net/ip-subnet-calculator.html
 - https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P
-
