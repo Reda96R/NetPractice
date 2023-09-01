@@ -122,3 +122,4 @@ Happy subnetting = ) .
 - https://www.practicalnetworking.net/stand-alone/subnetting-mastery/
 - https://www.calculator.net/ip-subnet-calculator.html
 - https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P
+
