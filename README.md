@@ -125,9 +125,9 @@ let's say our network looks something like this: **10.1.1.55/28**
 - **IP address numb** --> 16 (14 usable), the group size;
 - **CIDR/Mask**           --> /28 / 255.255.255.240;
 If you didn't get it I highly recommend watching this [video](https://www.youtube.com/watch?v=5-wlfAdcmFQ&t=130s) as it goes through all this steps in details.
-### Finding the attributes:
+#### Finding the attributes:
 Almost every problem in subnetting will require you to find one of the network attribute if not all of them, to do that we have a set of steps to follow.
-####  Network address:
+##### Network address:
 First we need two elements to begin with, an IP address from that network, and the network mask, let's see this example,
 ```
 IP address --> 192.168.3.50
@@ -146,6 +146,7 @@ Network Address = 192.168.3.50 AND 255.255.255.192
 Network Address = 11111111.11111111.11111111.00000000
 Network Address = 192.168.3.0
 ```
+##### Broadcast address:
 now it is time to find the last address on our network, the broadcast IP,
 first we need to invert our subnet Mask (switch 1's to 0's and 0's to 1's)
 ```
