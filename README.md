@@ -125,6 +125,41 @@ let's say our network looks something like this: **10.1.1.55/28**
 - **IP address numb** --> 16 (14 usable), the group size;
 - **CIDR/Mask**           --> /28 / 255.255.255.240;
 If you didn't get it I highly recommend watching this [video](https://www.youtube.com/watch?v=5-wlfAdcmFQ&t=130s) as it goes through all this steps in details.
+### Finding the attributes:
+Almost every problem in subnetting will require you to find one of the network attribute if not all of them, to do that we have a set of steps to follow.
+####  Network address:
+First we need two elements to begin with, an IP address from that network, and the network mask, let's see this example,
+```
+IP address --> 192.168.3.50
+Mask       --> 255.255.255.192
+```
+the first step if to convert them into binary,
+```
+IP address --> 192.168.3.50    --> 11000000.10101000.00000011.00110010
+Mask       --> 255.255.255.192 --> 11111111.11111111.11111111.11000000
+```
+> We can derive the **CIDR** notation from the representation of the Mask in binary by simply counting the network bits (bits with 1), in our example there are **26**, this means that this is a **/26** subnet, which is the CIDR notation of **192**
+
+the next step is to simply preform a bitwise **[AND](https://www.electrical4u.com/and-operation-logical-and-operation/)** operation and the result will be our network address,
+```
+Network Address = 192.168.3.50 AND 255.255.255.192
+Network Address = 11111111.11111111.11111111.00000000
+Network Address = 192.168.3.0
+```
+now it is time to find the last address on our network, the broadcast IP,
+first we need to invert our subnet Mask (switch 1's to 0's and 0's to 1's)
+```
+(NOT* MASK) --> 00000000.00000000.00000000.00111111
+(NOT* MASK) --> 0.0.0.63
+*NOT: bitwise complement
+```
+now we have one more step to go, we need to preform a bitwise **[OR](https://www.electrical4u.com/or-operation-logical-or-operation/)** operation between the network address and the inverted subnet mask,
+```
+Broadcast Address = 192.168.3.0 OR 0.0.0.63
+Broadcast Address = 11111111.11111111.11111111.00111111
+Broadcast Address = 192.168.3.63
+```
+now we can easily find our network range and other information if needed by following the methods provided earlier.
 # Acknowledgement:
 If you came up this far, well my friend congratulations that's all you need to start tackling the first levels of the project, but that doesn't mean that we've seen it all, in this short explanation I just brought to your attention some of the general concepts of subnetting and it is meant to give you a little kick start to get you going on the project, so you might need to do your own research to gain a more comprehensive understanding of subnetting and its intricacies.
 Happy subnetting = ) .
@@ -135,3 +170,4 @@ Happy subnetting = ) .
 - https://www.practicalnetworking.net/stand-alone/subnetting-mastery/
 - https://www.calculator.net/ip-subnet-calculator.html
 - https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P
+
